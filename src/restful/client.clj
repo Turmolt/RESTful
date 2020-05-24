@@ -33,8 +33,8 @@
 (defn put [data] (d/transact conn {:tx-data [data]}))
 
 (def all-books-q '[:find ?title ?author ?genre
-                   :where [?e :book/title ?title]
+                   :where [?e :book/title  ?title]
                           [?e :book/author ?author]
-                          [?e :book/genre ?genre]])
+                          [?e :book/genre  ?genre]])
 
 (defn all-books [] (d/q all-books-q (db)))

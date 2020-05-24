@@ -1,6 +1,6 @@
 # restful
 
-a basic RESTful API that stores guests in a database
+a basic RESTful API that stores books in a database
 
 ## Usage
 
