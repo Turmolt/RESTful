@@ -34,8 +34,8 @@
 
 (def all-books-q '[:find ?title ?author ?genre
                    :where [?e :book/title  ?title]
-                   [?e :book/author ?author]
-                   [?e :book/genre  ?genre]])
+                          [?e :book/author ?author]
+                          [?e :book/genre  ?genre]])
 
 (def all-books-t '[:find (pull ?e [*])
                    :where [?e :book/title  ?title]])
